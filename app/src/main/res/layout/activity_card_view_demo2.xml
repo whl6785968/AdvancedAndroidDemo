@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_list_view"
+    android:divider="@null"
+    android:background="#ffffff"
+    android:paddingTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardViewDemo2Activity">
+    
+
+
+</ListView>

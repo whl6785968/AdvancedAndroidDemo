@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardViewDemo1Activity">
+<!--    Elevation:设置阴影-->
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#00ff00"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="hello world"/>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

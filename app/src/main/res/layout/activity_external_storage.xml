@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExternalStorageActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:hint="请输入内容"
+        android:maxLines="12"
+        android:minLines="12"
+        android:id="@+id/external_edt"
+        android:background="@null"></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/external_txt"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/external_write"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="存入"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"></Button>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/external_read"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="读取 "
+            android:layout_weight="1"></Button>
+    </LinearLayout>
+
+</LinearLayout>

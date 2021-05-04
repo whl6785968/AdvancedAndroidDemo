@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AsynTaskDemoActivity"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/downloadProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"></ProgressBar>
+
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击下载"></Button>
+
+    <TextView
+        android:id="@+id/downloadTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"></TextView>
+</LinearLayout>

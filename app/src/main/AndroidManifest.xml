@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sandalen.advanceddemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApp.GreenAplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdvancedDemo"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".GoodsDetailActivity"></activity>
+        <activity android:name=".GlideActivity" />
+        <activity android:name=".RecyclerViewActivity" />
+        <activity android:name=".GreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EventBusDemo2Activity"
+            android:label="@string/title_activity_event_bus_demo2"
+            android:theme="@style/Theme.AdvancedDemo.NoActionBar" />
+        <activity android:name=".StikcyActivity" />
+        <activity android:name=".EventBusDemo1Activity" />
+        <activity android:name=".AppDemoActivity" />
+        <activity android:name=".ExpandedListViewActivity" />
+        <activity android:name=".SqlDemo1Activity" />
+        <activity android:name=".ExternalStorageActivity" />
+        <activity android:name=".SharedPreferenceActivity" />
+        <activity android:name=".CardViewDemo2Activity" />
+        <activity android:name=".ListViewDemo2Activity" />
+        <activity android:name=".CardViewDemo1Activity" />
+        <activity android:name=".ListViewDemoActivity" />
+        <activity android:name=".AsynTaskDemoActivity" />
+        <activity android:name=".DiglettActivitiy" />
+        <activity android:name=".CountdownActivity" />
+        <activity android:name=".DownloadActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".OkHttpActivity" />
+    </application>
+
+</manifest>

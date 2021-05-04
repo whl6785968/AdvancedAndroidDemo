@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Get" android:id="@+id/menu_get"/>
+    <item android:title="Post" android:id="@+id/menu_post"/>
+    <item android:title="Response" android:id="@+id/menu_response"/>
+    <item app:showAsAction="never" android:title="stick" android:id="@+id/stick_event" android:orderInCategory="100"/>
+</menu>

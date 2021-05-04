@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SqlDemo1Activity"
+    android:orientation="vertical"
+    android:padding="10dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名："></TextView>
+        <EditText
+            android:id="@+id/sql_edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入姓名"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年龄："></TextView>
+        <EditText
+            android:id="@+id/sql_edt_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入年龄"
+            android:numeric="integer"></EditText>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/sql_radio_gp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别："/>
+        <RadioButton
+            android:id="@+id/sql_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:checked="true"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/sql_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"></RadioButton>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/sql_id_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="编号"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sql_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加"
+            android:onClick="operate"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"></Button>
+
+        <Button
+            android:id="@+id/sql_delete"
+            android:onClick="operate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"></Button>
+
+        <Button
+            android:id="@+id/sql_update"
+            android:onClick="operate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"></Button>
+
+        <Button
+            android:id="@+id/sql_check"
+            android:onClick="operate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查找"
+            android:layout_weight="1"></Button>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/stu_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
